@@ -1,4 +1,4 @@
-# rgb_3d_reconstruction
+# Photogrammetry Software
 ## Purpose
 - A handy pipeline to make a textured mesh from rgb images (currently) by the traditional methods.
 - Reproduce the latest methods.
@@ -24,10 +24,9 @@ bash rgb_reconstruction.sh $1   # $1 must be an absolute path.
 We provide a [sample data](https://pan.baidu.com/s/1Ekx5msUdmoQynWi4C12Fdw) in Baidu Disk from DTU datasets and the password is *uts5*.
 
 ## TODO
-- [X] Released Pipeline for COLMAP and openMVS as a library. From rgb input into textured mesh.
-- [ ] Add keyframe abstraction from SLAM-Based algorithm.
-- [ ] ACMM Re-producing
-- [ ] Combine Poisson Reconstruction.
+- [ ] Add Mission planning code for DJI platform.
+- [X] Released Pipeline for COLMAP for SfM.
+- [ ] Add openMVS as a library. From rgb input into textured mesh.
 
 ## Samples
 - [X] DTU-scan1
@@ -35,7 +34,7 @@ We provide a [sample data](https://pan.baidu.com/s/1Ekx5msUdmoQynWi4C12Fdw) in B
 - [ ] Eth3d
 
 ## Acknowledgements
-- [COLMAP-3.8](https://github.com/colmap/colmap)
-- [OpenMVS-2.0.1](https://github.com/cdcseacave/openMVS)
+- [COLMAP](https://github.com/colmap/colmap)
+- [OpenMVS](https://github.com/cdcseacave/openMVS)
 - [Poisson Reconstruction](https://www.cs.jhu.edu/~misha/Code/PoissonRecon/Version13.8/)
 - [Meshlab](https://github.com/cnr-isti-vclab/meshlab)
