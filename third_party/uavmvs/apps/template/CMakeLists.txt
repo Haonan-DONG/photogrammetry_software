@@ -6,4 +6,4 @@ enable_language(CXX)
 
 # Add the source file
 add_executable(template template.cpp)
-use_mve_util(template)
+link_mve_libraries(template)

@@ -13,8 +13,7 @@ set(SOURCE_FILES
 
 # Create the executable
 add_executable(interop ${SOURCE_FILES})
-use_mve_util(interop)
-use_mve_ogl(interop)
+link_mve_libraries(interop)
 
 # Add compiler options for nvcc
 target_compile_options(interop PRIVATE -Xcompiler -fopenmp)

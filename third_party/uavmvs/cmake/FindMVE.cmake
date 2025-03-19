@@ -25,29 +25,10 @@ endif()
 set(MVE_INCLUDE_DIRS ${MVE_ROOT}/libs)
 
 # Link directories
-set(MVE_LIB_DIRS ${MVE_ROOT}/libs/mve)
-set(MVE_LIBS mve jpeg png tiff)
+set(MVE_LIB_DIRS ${MVE_ROOT}/mve_libs)
+set(MVE_LIBS mve mve_dmrecon mve_fssr mve_ogl mve_sfm mve_util jpeg png tiff)
 
-set(MVE_OGL_LIB_DIRS ${MVE_ROOT}/libs/ogl)
-set(MVE_OGL_LIBS mve_ogl)
-
-set(MVE_UTILS_LIB_DIRS ${MVE_ROOT}/libs/util)
-set(MVE_UTILS_LIBS mve_util)
-
-function(use_mve_ogl target_name)
-    target_include_directories(${target_name} PUBLIC ${MVE_INCLUDE_DIRS})
-    target_link_directories(${target_name} PUBLIC ${MVE_OGL_LIB_DIRS})
-    target_link_libraries(${target_name} PUBLIC ${MVE_OGL_LIBS})
-endfunction()
-
-function(use_mve_util target_name)
-    target_include_directories(${target_name} PUBLIC ${MVE_INCLUDE_DIRS})
-    target_link_directories(${target_name} PUBLIC ${MVE_UTILS_LIB_DIRS})
-    target_link_libraries(${target_name} PUBLIC ${MVE_UTILS_LIBS})
-endfunction()
-
-
-function(use_mve target_name)
+function(link_MVE_libraries target_name)
     target_include_directories(${target_name} PUBLIC ${MVE_INCLUDE_DIRS})
     target_link_directories(${target_name} PUBLIC ${MVE_LIB_DIRS})
     target_link_libraries(${target_name} PUBLIC ${MVE_LIBS})

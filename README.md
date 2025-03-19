@@ -21,7 +21,9 @@ cmake .. -DMVE_ROOT=../third_party/uavmvs/elibs/mve/ -DMVST_ROOT=../third_party/
 
 ## TODO
 - [X] Add Mission planning code for DJI platform.
-    - [ ] Change uavmvs in a cmake lib.
+    - [ ] Change uavmvs in a cmake lib
+        - [X] Add MVE as the sfm basic lib
+        - [ ] Add MVS-Texture as the basic txture lib
 - [X] Released Pipeline for COLMAP for SfM.
 - [ ] Add openMVS as a library. From rgb input into textured mesh.
 

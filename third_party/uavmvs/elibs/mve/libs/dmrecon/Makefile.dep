@@ -1,0 +1,99 @@
+global_view_selection.o: global_view_selection.cc \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/dmrecon/global_view_selection.h \
+ ../../libs/mve/bundle.h ../../libs/mve/camera.h ../../libs/mve/defines.h \
+ ../../libs/mve/mesh.h ../../libs/dmrecon/single_view.h \
+ ../../libs/math/matrix.h ../../libs/mve/view.h \
+ ../../libs/mve/image_base.h ../../libs/util/strings.h \
+ ../../libs/util/defines.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/dmrecon/defines.h \
+ ../../libs/dmrecon/image_pyramid.h ../../libs/mve/scene.h \
+ ../../libs/dmrecon/view_selection.h ../../libs/dmrecon/settings.h \
+ ../../libs/dmrecon/mvs_tools.h
+patch_optimization.o: patch_optimization.cc ../../libs/util/strings.h \
+ ../../libs/util/defines.h ../../libs/math/algo.h \
+ ../../libs/math/defines.h ../../libs/math/matrix.h \
+ ../../libs/math/vector.h ../../libs/math/matrix_tools.h \
+ ../../libs/dmrecon/patch_optimization.h ../../libs/dmrecon/defines.h \
+ ../../libs/dmrecon/patch_sampler.h ../../libs/dmrecon/settings.h \
+ ../../libs/dmrecon/single_view.h ../../libs/mve/view.h \
+ ../../libs/mve/defines.h ../../libs/mve/camera.h \
+ ../../libs/mve/image_base.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/dmrecon/image_pyramid.h \
+ ../../libs/mve/scene.h ../../libs/mve/bundle.h ../../libs/mve/mesh.h \
+ ../../libs/dmrecon/local_view_selection.h \
+ ../../libs/dmrecon/view_selection.h
+image_pyramid.o: image_pyramid.cc ../../libs/dmrecon/image_pyramid.h \
+ ../../libs/mve/scene.h ../../libs/mve/defines.h ../../libs/mve/view.h \
+ ../../libs/mve/camera.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/util/defines.h \
+ ../../libs/mve/image.h ../../libs/math/functions.h \
+ ../../libs/math/defines.h ../../libs/math/vector.h \
+ ../../libs/math/algo.h ../../libs/math/matrix.h ../../libs/mve/bundle.h \
+ ../../libs/mve/mesh.h ../../libs/dmrecon/defines.h \
+ ../../libs/mve/image_tools.h ../../libs/util/exception.h \
+ ../../libs/math/accum.h
+patch_sampler.o: patch_sampler.cc ../../libs/math/defines.h \
+ ../../libs/math/matrix.h ../../libs/math/algo.h ../../libs/math/vector.h \
+ ../../libs/dmrecon/defines.h ../../libs/dmrecon/mvs_tools.h \
+ ../../libs/mve/image.h ../../libs/math/functions.h \
+ ../../libs/mve/defines.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/util/defines.h \
+ ../../libs/dmrecon/single_view.h ../../libs/mve/view.h \
+ ../../libs/mve/camera.h ../../libs/dmrecon/image_pyramid.h \
+ ../../libs/mve/scene.h ../../libs/mve/bundle.h ../../libs/mve/mesh.h \
+ ../../libs/dmrecon/patch_sampler.h ../../libs/dmrecon/settings.h
+single_view.o: single_view.cc ../../libs/util/file_system.h \
+ ../../libs/util/defines.h ../../libs/mve/image_io.h \
+ ../../libs/mve/defines.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/math/defines.h \
+ ../../libs/math/vector.h ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/mve/image_base.h ../../libs/util/strings.h \
+ ../../libs/mve/image_tools.h ../../libs/util/exception.h \
+ ../../libs/math/accum.h ../../libs/mve/depthmap.h \
+ ../../libs/mve/camera.h ../../libs/mve/mesh.h \
+ ../../libs/mve/mesh_io_ply.h ../../libs/util/system.h \
+ ../../libs/mve/view.h ../../libs/dmrecon/defines.h \
+ ../../libs/dmrecon/single_view.h ../../libs/dmrecon/image_pyramid.h \
+ ../../libs/mve/scene.h ../../libs/mve/bundle.h
+local_view_selection.o: local_view_selection.cc ../../libs/math/defines.h \
+ ../../libs/math/functions.h ../../libs/math/vector.h \
+ ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/dmrecon/local_view_selection.h \
+ ../../libs/dmrecon/view_selection.h ../../libs/dmrecon/defines.h \
+ ../../libs/dmrecon/settings.h ../../libs/dmrecon/patch_sampler.h \
+ ../../libs/dmrecon/single_view.h ../../libs/mve/view.h \
+ ../../libs/mve/defines.h ../../libs/mve/camera.h \
+ ../../libs/mve/image_base.h ../../libs/util/strings.h \
+ ../../libs/util/defines.h ../../libs/mve/image.h \
+ ../../libs/dmrecon/image_pyramid.h ../../libs/mve/scene.h \
+ ../../libs/mve/bundle.h ../../libs/mve/mesh.h \
+ ../../libs/dmrecon/mvs_tools.h
+mvs_tools.o: mvs_tools.cc ../../libs/mve/image_tools.h \
+ ../../libs/util/exception.h ../../libs/util/defines.h \
+ ../../libs/math/accum.h ../../libs/math/functions.h \
+ ../../libs/math/defines.h ../../libs/math/vector.h \
+ ../../libs/math/algo.h ../../libs/math/matrix.h ../../libs/mve/defines.h \
+ ../../libs/mve/image.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/mve/image_io.h \
+ ../../libs/dmrecon/mvs_tools.h ../../libs/dmrecon/defines.h \
+ ../../libs/dmrecon/single_view.h ../../libs/mve/view.h \
+ ../../libs/mve/camera.h ../../libs/dmrecon/image_pyramid.h \
+ ../../libs/mve/scene.h ../../libs/mve/bundle.h ../../libs/mve/mesh.h
+dmrecon.o: dmrecon.cc ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/math/functions.h \
+ ../../libs/math/matrix.h ../../libs/math/octree_tools.h \
+ ../../libs/math/matrix_tools.h ../../libs/mve/image.h \
+ ../../libs/mve/defines.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/util/defines.h \
+ ../../libs/mve/image_tools.h ../../libs/util/exception.h \
+ ../../libs/math/accum.h ../../libs/util/file_system.h \
+ ../../libs/dmrecon/settings.h ../../libs/dmrecon/defines.h \
+ ../../libs/dmrecon/dmrecon.h ../../libs/mve/bundle.h \
+ ../../libs/mve/camera.h ../../libs/mve/mesh.h ../../libs/mve/scene.h \
+ ../../libs/mve/view.h ../../libs/dmrecon/patch_optimization.h \
+ ../../libs/dmrecon/patch_sampler.h ../../libs/dmrecon/single_view.h \
+ ../../libs/dmrecon/image_pyramid.h \
+ ../../libs/dmrecon/local_view_selection.h \
+ ../../libs/dmrecon/view_selection.h ../../libs/dmrecon/progress.h \
+ ../../libs/dmrecon/global_view_selection.h
