@@ -1,0 +1,21 @@
+[submodule "libs/acc"]
+	path = libs/acc
+	url = https://github.com/nmoehrle/libacc.git
+[submodule "libs/cacc"]
+	path = libs/cacc
+	url = https://github.com/nmoehrle/libcacc.git
+[submodule "libs/col"]
+	path = libs/col
+	url = https://github.com/nmoehrle/libcol.git
+[submodule "libs/fmt"]
+	path = libs/fmt
+	url = https://github.com/nmoehrle/libfmt.git
+[submodule "libs/stat"]
+	path = libs/stat
+	url = https://github.com/nmoehrle/libstat.git
+[submodule "elibs/mve"]
+	path = elibs/mve
+	url = https://github.com/nmoehrle/mve.git
+[submodule "elibs/mvs-texturing"]
+	path = elibs/mvs-texturing
+	url = https://github.com/nmoehrle/mvs-texturing.git
