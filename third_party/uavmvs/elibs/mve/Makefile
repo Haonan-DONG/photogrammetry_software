@@ -4,7 +4,7 @@ MVE_LIB_PATH = ./mve_libs
 all:
 	mkdir -p ${MVE_LIB_PATH}
 	$(MAKE) -C libs
-	$(MAKE) -C apps
+# $(MAKE) -C apps
 
 # Builds Doxygen documentation
 doc:

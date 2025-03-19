@@ -1,6 +1,5 @@
 #!/bin/bash
-set -e
-#Focal: 15/17.3=0.867
+Focal: 15/17.3=0.867
 aspect=0.66 #4000/6000 camera resolution
 focal=0.867
 maxD=30
@@ -11,17 +10,8 @@ elev=-15
 f=80
 s=80
 
-#Set proper directories for your build!
-binaries=$(cd /home/a6000/projects/haonandong/path_planning/uavmvs/build/release; pwd)
-scripts=$(cd /home/a6000/projects/haonandong/path_planning/uavmvs/scripts; pwd)
-mveapps=$(cd /home/a6000/projects/haonandong/path_planning/uavmvs/env/mve/apps; pwd)
-export PATH=/bin:/usr/bin:$binaries:$scripts
-
-root=$(pwd)
-host=$(hostname)
-
 #Create project name of experiment
-project=/home/a6000/projects/haonandong/path_planning/uavmvs/experiment/
+project=$1
 
 meshes=$project/meshes
 models=$project/models
@@ -57,7 +47,11 @@ mkdir $plan_dir
 #This takes as input the point cloud representing the proxy model
 #Note: if you only have a mesh or it has many holes first convert to point cloud using this command:
 generate_proxy_cloud gesox-mesh.ply gesox-cloud.ply --samples=25
+
+# generate a mesh from the point cloud
 generate_proxy_mesh $root/$scenes/recon/gesox-cloud.ply $root/$scenes/recon/gesox-mesh.ply
+
+# generate a optimized airspace for it.
 generate_proxy_mesh $root/$scenes/recon/gesox-cloud.ply $root/$scenes/recon/airspace.ply \
             --min-distance=3.0
 

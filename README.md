@@ -1,29 +1,30 @@
 # Photogrammetry Software
-## Purpose
-- A handy pipeline to make a textured mesh from rgb images (currently) by the traditional methods.
-- Reproduce the latest methods.
+This repo mainly includes basic module for photogrammetry based on unmanned aerial vehicle. Important features include:
+- UAV Path Planing
+- Structure from Motion for Pose Estimation
+- Multi-View Stereo for Dense Reconstruction
+- Texture Mapping
+- Rendering
 
 ## How to use
 ```shell
 # get the mission planning software
-git clone --recursive https://github.com/nmoehrle/uavmvs.git
+git clone https://github.com/Haonan-DONG/photogrammetry_software.git --recursive
 
-## compile the mve and mvst lib
+## compile the third library mve
 cd mve
 make -j
 
-cd mvs-texturing
-mkdir build
-cmake ..  && make -j
-
-cmake .. -DMVE_ROOT=../third_party/uavmvs/elibs/mve/ -DMVST_ROOT=../third_party/uavmvs/elibs/mvs-texturing/
+cmake .. -DMVE_ROOT=../third_party/uavmvs/elibs/mve/
+make -j
 ```
 
 ## TODO
 - [X] Add Mission planning code for DJI platform.
     - [X] Change uavmvs in a cmake lib
         - [X] Add MVE as the sfm basic lib
-    - [ ] Add MVS-Texture as the basic txture lib
+    - [ ] Test the ndair and oblique path planning
+- [ ] Add MVS-Texture as the basic txture lib
 - [X] Released Pipeline for COLMAP for SfM.
 - [ ] Add openMVS as a library. From rgb input into textured mesh.
 
