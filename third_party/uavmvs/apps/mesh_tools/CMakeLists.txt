@@ -23,6 +23,5 @@ add_executable(estimate_transform-mesh estimate_transform.cpp)
 find_package(OpenMP REQUIRED)
 target_compile_options(estimate_transform-mesh PRIVATE ${OpenMP_CXX_FLAGS})
 
-# Link with 'gomp' and 'util'
 target_link_libraries(estimate_transform-mesh PRIVATE gomp pthread)
 link_mve_libraries(estimate_transform-mesh)

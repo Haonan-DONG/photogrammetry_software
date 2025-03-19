@@ -63,15 +63,19 @@ add_subdirectory(apps/mesh_tools)
 # add_subdirectory(apps/scene_tools)
 # add_subdirectory(apps/cloud_tools)
 # add_subdirectory(apps/volume_tools)
-# add_subdirectory(apps/trajectory_tools)
+add_subdirectory(apps/trajectory_tools)
+add_subdirectory(apps/generate_proxy_mesh)
+add_subdirectory(apps/generate_proxy_cloud)
+add_subdirectory(apps/optimize_trajectory)
+add_subdirectory(apps/evaluate_trajectory)
+
 
 # add_subdirectory(apps/determine_matching_mask)
 # add_subdirectory(apps/estimate_ground_plane)
 
 # add_subdirectory(apps/generate_texture)
 # add_subdirectory(apps/generate_gcp_bundle)
-# add_subdirectory(apps/generate_proxy_mesh)
-# add_subdirectory(apps/generate_proxy_cloud)
+
 # add_subdirectory(apps/generate_guidance_volume)
 # add_subdirectory(apps/generate_initial_trajectory)
 
@@ -81,8 +85,6 @@ add_subdirectory(apps/mesh_tools)
 
 # add_subdirectory(apps/plan_trajectory)
 # add_subdirectory(apps/capture_trajectory)
-# add_subdirectory(apps/optimize_trajectory)
-# add_subdirectory(apps/evaluate_trajectory)
 # add_subdirectory(apps/evaluate_heuristic)
 # add_subdirectory(apps/evaluate_reconstruction)
 # add_subdirectory(apps/evaluate_ground_sampling)
