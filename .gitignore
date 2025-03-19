@@ -1,6 +1,7 @@
-# *third_party
 samples
 build
 *download_latest_code.sh
 *.a
 *.o
+*.lua
+*.ply
