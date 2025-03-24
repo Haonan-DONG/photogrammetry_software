@@ -39,7 +39,6 @@ execute_process(COMMAND git submodule init WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 execute_process(COMMAND git submodule update WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
 
 find_package(MVE)
-find_package(MVST)
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/libs
