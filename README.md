@@ -22,6 +22,11 @@ make -j
 ## path planning
 bash shell/mission_plan.sh
 ```
+## Data and Run
+### Mission Plan
+The demo data is uploaded into [baidu disk, psw:7z9n](https://pan.baidu.com/s/1E1aecb8SpcAujOZ3HdEazg?pwd=7z9n), After running the mission_plan shell, the path will be visualized as follows:
+![mission_plan](doc/mission_plan.png)
+
 
 ## TODO
 - [X] Add Mission planning code for DJI platform.
