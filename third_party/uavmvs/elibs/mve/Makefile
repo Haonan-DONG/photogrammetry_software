@@ -16,7 +16,7 @@ test:
 
 # Cleans all libs and apps except umve
 clean:
-	$(MAKE) -C apps $@
+# $(MAKE) -C apps $@
 	$(MAKE) -C libs $@
 	$(MAKE) -C tests $@
 

@@ -6,3 +6,4 @@ build
 *.lua
 *.ply
 tem*
+data
