@@ -42,7 +42,7 @@ The demo data is uploaded into [baidu disk, psw:7z9n](https://pan.baidu.com/s/1E
     - [X] Test the ndair and oblique path planning
     - [X] Test the optimized path planning
 - [X] Released Pipeline for COLMAP for SfM.
-- [ ] Add openMVS as a library. From rgb input into textured mesh.
+- [X] Add openMVS as a library. From rgb input into textured mesh.
 - [ ] For large-scale dataset, incoorperate parallel-sfm module
 - [ ] Add lite version to generate the real-time orthorectified image.
     - [ ] Add GPS info from the exiv file. (TESTED ON ubuntu 20.04)
