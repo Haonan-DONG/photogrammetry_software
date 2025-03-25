@@ -21,6 +21,13 @@ make -j
 
 ## path planning
 bash shell/mission_plan.sh
+
+# compile colmap
+cd third_party/colmap
+
+
+# compile openmvs
+cmake -DVCG_ROOT=../../VCG ..
 ```
 ## Data and Run
 ### Mission Plan
@@ -34,7 +41,7 @@ The demo data is uploaded into [baidu disk, psw:7z9n](https://pan.baidu.com/s/1E
         - [X] Add MVE as the sfm basic lib
     - [X] Test the ndair and oblique path planning
     - [X] Test the optimized path planning
-- [ ] Released Pipeline for COLMAP for SfM.
+- [X] Released Pipeline for COLMAP for SfM.
 - [ ] Add openMVS as a library. From rgb input into textured mesh.
 - [ ] For large-scale dataset, incoorperate parallel-sfm module
 - [ ] Add lite version to generate the real-time orthorectified image.
