@@ -2,16 +2,16 @@
 rm -rf $1/sfm $1/mvs $1/mesh
 
 # Feature Extraction and Match
-third_party/colmap/build/src/exe/colmap feature_extractor --image_path $1/images/ --database_path $1/data.db
-third_party/colmap/build/src/exe/colmap exhaustive_matcher --database_path $1/data.db
+third_party/colmap/build/src/colmap/exe/colmap feature_extractor --image_path $1/images/ --database_path $1/data.db
+third_party/colmap/build/src/colmap/exe/colmap exhaustive_matcher --database_path $1/data.db
 
 # Structure from Motion
-third_party/colmap/build/src/exe/colmap mapper --image_path $1/images/ --database_path $1/data.db --output_path $1/
+third_party/colmap/build/src/colmap/exe/colmap mapper --image_path $1/images/ --database_path $1/data.db --output_path $1/
 
 #Undistortion
 mv $1/0 $1/sparse
 mkdir $1/sfm
-third_party/colmap/build/src/exe/colmap image_undistorter --image_path $1/images/ --input_path $1/sparse/ --output_path $1/sfm
+third_party/colmap/build/src/colmap/exe/colmap image_undistorter --image_path $1/images/ --input_path $1/sparse/ --output_path $1/sfm
 mv $1/sparse $1/sfm/sparse_radial
 mv $1/data.db $1/sfm
 
