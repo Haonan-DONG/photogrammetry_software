@@ -6,6 +6,13 @@ This repo mainly includes basic module for photogrammetry based on unmanned aeri
 - Texture Mapping
 - Rendering
 
+## Pre-requisite
+The code is tested on a Linux machine of Ubuntu 20.04 with RTX 4090. \
+CUDA 12.0 \
+Eigen 3.4.0 \
+Ceres 2.1.0 \
+
+
 ## How to use
 ```shell
 # get the mission planning software
@@ -21,6 +28,11 @@ make -j
 
 ## path planning
 bash shell/mission_plan.sh
+
+# compile colmap 
+
+# compile openMVS
+ cmake -DVCG_ROOT=[VCG_REPO_PATH] -DEigen3_DIR=[Eigen3_INSTALL_PATH] -DCGAL_DIR=[CGAL_INSTALL_PATH] -DBoost_ROOT=[Boost_INSTALL_PATH] ..
 ```
 ## Data and Run
 ### Mission Plan
@@ -34,11 +46,11 @@ The demo data is uploaded into [baidu disk, psw:7z9n](https://pan.baidu.com/s/1E
         - [X] Add MVE as the sfm basic lib
     - [X] Test the ndair and oblique path planning
     - [X] Test the optimized path planning
-- [ ] Released Pipeline for COLMAP for SfM.
-- [ ] Add openMVS as a library. From rgb input into textured mesh.
+- [X] Released Pipeline for COLMAP for SfM.
+- [X] Add openMVS as a library. From rgb input into textured mesh.
 - [ ] For large-scale dataset, incoorperate parallel-sfm module
 - [ ] Add lite version to generate the real-time orthorectified image.
-    - [ ] Add GPS info from the exiv file. (TESTED ON ubuntu 20.04)
+    - [ ] Add GPS info from the exiv file.
 - [ ] Add Mesh refine module by line-constrain.
 
 ## Acknowledgements
