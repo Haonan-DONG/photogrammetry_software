@@ -1,0 +1,50 @@
+mesh_clean.o: mesh_clean.cc ../../libs/math/defines.h \
+ ../../libs/mve/mesh.h ../../libs/math/vector.h ../../libs/math/algo.h \
+ ../../libs/mve/defines.h ../../libs/mve/mesh_tools.h \
+ ../../libs/math/matrix.h ../../libs/mve/mesh_info.h \
+ ../../libs/fssr/mesh_clean.h ../../libs/fssr/defines.h
+voxel.o: voxel.cc ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/fssr/voxel.h ../../libs/fssr/defines.h \
+ ../../libs/fssr/octree.h ../../libs/mve/mesh.h ../../libs/mve/defines.h \
+ ../../libs/fssr/sample.h
+triangulation.o: triangulation.cc ../../libs/math/geometry.h \
+ ../../libs/math/defines.h ../../libs/math/vector.h \
+ ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/math/matrix_tools.h ../../libs/fssr/defines.h \
+ ../../libs/fssr/triangulation.h
+octree.o: octree.cc ../../libs/util/timer.h ../../libs/util/defines.h \
+ ../../libs/mve/mesh_io.h ../../libs/mve/defines.h ../../libs/mve/mesh.h \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/fssr/octree.h \
+ ../../libs/fssr/defines.h ../../libs/fssr/sample.h
+sample_io.o: sample_io.cc ../../libs/util/exception.h \
+ ../../libs/util/defines.h ../../libs/util/tokenizer.h \
+ ../../libs/util/strings.h ../../libs/mve/mesh_io_ply.h \
+ ../../libs/util/system.h ../../libs/mve/defines.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/math/defines.h \
+ ../../libs/math/vector.h ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/mve/image_base.h ../../libs/mve/camera.h \
+ ../../libs/mve/view.h ../../libs/mve/mesh.h ../../libs/fssr/sample_io.h \
+ ../../libs/fssr/defines.h ../../libs/fssr/sample.h
+iso_surface.o: iso_surface.cc ../../libs/util/timer.h \
+ ../../libs/util/defines.h ../../libs/fssr/octree.h \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/mve/mesh.h ../../libs/mve/defines.h \
+ ../../libs/fssr/defines.h ../../libs/fssr/sample.h \
+ ../../libs/fssr/iso_surface.h ../../libs/fssr/hermite.h \
+ ../../libs/fssr/iso_octree.h ../../libs/fssr/voxel.h \
+ ../../libs/fssr/triangulation.h
+hermite.o: hermite.cc ../../libs/fssr/hermite.h ../../libs/fssr/defines.h
+basis_function.o: basis_function.cc ../../libs/math/vector.h \
+ ../../libs/math/defines.h ../../libs/math/algo.h \
+ ../../libs/math/matrix.h ../../libs/math/matrix_tools.h \
+ ../../libs/math/functions.h ../../libs/fssr/basis_function.h \
+ ../../libs/fssr/defines.h ../../libs/fssr/sample.h
+iso_octree.o: iso_octree.cc ../../libs/util/timer.h \
+ ../../libs/util/defines.h ../../libs/util/strings.h \
+ ../../libs/fssr/basis_function.h ../../libs/math/vector.h \
+ ../../libs/math/defines.h ../../libs/math/algo.h \
+ ../../libs/math/matrix.h ../../libs/fssr/defines.h \
+ ../../libs/fssr/sample.h ../../libs/fssr/iso_octree.h \
+ ../../libs/fssr/voxel.h ../../libs/fssr/octree.h ../../libs/mve/mesh.h \
+ ../../libs/mve/defines.h

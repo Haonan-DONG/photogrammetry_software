@@ -1,0 +1,240 @@
+cascade_hashing.o: cascade_hashing.cc ../../libs/sfm/cascade_hashing.h \
+ ../../libs/math/functions.h ../../libs/math/defines.h \
+ ../../libs/math/vector.h ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/exhaustive_matching.h \
+ ../../libs/sfm/bundler_common.h ../../libs/util/aligned_memory.h \
+ ../../libs/util/defines.h ../../libs/util/aligned_allocator.h \
+ ../../libs/mve/image.h ../../libs/mve/defines.h \
+ ../../libs/mve/image_base.h ../../libs/util/strings.h \
+ ../../libs/sfm/camera_pose.h ../../libs/math/matrix_tools.h \
+ ../../libs/sfm/correspondence.h ../../libs/sfm/feature_set.h \
+ ../../libs/sfm/sift.h ../../libs/sfm/surf.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/matching_base.h ../../libs/sfm/matching.h \
+ ../../libs/sfm/nearest_neighbor.h ../../libs/util/system.h \
+ ../../libs/util/timer.h
+bundler_features.o: bundler_features.cc ../../libs/util/timer.h \
+ ../../libs/util/defines.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/math/defines.h \
+ ../../libs/math/vector.h ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/mve/defines.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/mve/image_exif.h \
+ ../../libs/mve/image_tools.h ../../libs/util/exception.h \
+ ../../libs/math/accum.h ../../libs/sfm/bundler_common.h \
+ ../../libs/util/aligned_memory.h ../../libs/util/aligned_allocator.h \
+ ../../libs/sfm/camera_pose.h ../../libs/math/matrix_tools.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/correspondence.h \
+ ../../libs/sfm/feature_set.h ../../libs/sfm/sift.h ../../libs/sfm/surf.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/extract_focal_length.h \
+ ../../libs/sfm/bundler_features.h ../../libs/mve/scene.h \
+ ../../libs/mve/view.h ../../libs/mve/camera.h ../../libs/mve/bundle.h \
+ ../../libs/mve/mesh.h
+homography.o: homography.cc ../../libs/math/matrix_tools.h \
+ ../../libs/math/defines.h ../../libs/math/matrix.h \
+ ../../libs/math/algo.h ../../libs/math/vector.h \
+ ../../libs/math/matrix_svd.h ../../libs/math/matrix_qr.h \
+ ../../libs/sfm/homography.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/correspondence.h
+ransac_pose_p3p.o: ransac_pose_p3p.cc ../../libs/util/system.h \
+ ../../libs/util/defines.h ../../libs/math/matrix_tools.h \
+ ../../libs/math/defines.h ../../libs/math/matrix.h \
+ ../../libs/math/algo.h ../../libs/math/vector.h \
+ ../../libs/sfm/ransac_pose_p3p.h ../../libs/sfm/correspondence.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/pose_p3p.h
+matching.o: matching.cc ../../libs/math/algo.h ../../libs/math/defines.h \
+ ../../libs/sfm/nearest_neighbor.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/matching.h
+bundle_adjustment.o: bundle_adjustment.cc ../../libs/math/matrix_tools.h \
+ ../../libs/math/defines.h ../../libs/math/matrix.h \
+ ../../libs/math/algo.h ../../libs/math/vector.h ../../libs/util/timer.h \
+ ../../libs/util/defines.h ../../libs/sfm/ba_sparse_matrix.h \
+ ../../libs/sfm/ba_dense_vector.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/bundle_adjustment.h ../../libs/util/logging.h \
+ ../../libs/sfm/ba_linear_solver.h ../../libs/sfm/ba_types.h
+sift.o: sift.cc ../../libs/util/timer.h ../../libs/util/defines.h \
+ ../../libs/math/functions.h ../../libs/math/defines.h \
+ ../../libs/math/vector.h ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/math/matrix_tools.h ../../libs/mve/image_io.h \
+ ../../libs/mve/defines.h ../../libs/mve/image.h \
+ ../../libs/mve/image_base.h ../../libs/util/strings.h \
+ ../../libs/mve/image_tools.h ../../libs/util/exception.h \
+ ../../libs/math/accum.h ../../libs/sfm/sift.h ../../libs/sfm/defines.h
+nearest_neighbor.o: nearest_neighbor.cc ../../libs/sfm/nearest_neighbor.h \
+ ../../libs/sfm/defines.h
+exhaustive_matching.o: exhaustive_matching.cc \
+ ../../libs/sfm/exhaustive_matching.h ../../libs/sfm/bundler_common.h \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/util/aligned_memory.h \
+ ../../libs/util/defines.h ../../libs/util/aligned_allocator.h \
+ ../../libs/mve/image.h ../../libs/math/functions.h \
+ ../../libs/math/matrix.h ../../libs/mve/defines.h \
+ ../../libs/mve/image_base.h ../../libs/util/strings.h \
+ ../../libs/sfm/camera_pose.h ../../libs/math/matrix_tools.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/correspondence.h \
+ ../../libs/sfm/feature_set.h ../../libs/sfm/sift.h ../../libs/sfm/surf.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/matching_base.h \
+ ../../libs/sfm/matching.h ../../libs/sfm/nearest_neighbor.h
+triangulate.o: triangulate.cc ../../libs/math/matrix_svd.h \
+ ../../libs/math/defines.h ../../libs/math/matrix.h \
+ ../../libs/math/algo.h ../../libs/math/vector.h \
+ ../../libs/math/matrix_tools.h ../../libs/math/matrix_qr.h \
+ ../../libs/sfm/triangulate.h ../../libs/sfm/correspondence.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/camera_pose.h
+pose_p3p.o: pose_p3p.cc ../../libs/math/matrix.h \
+ ../../libs/math/defines.h ../../libs/math/algo.h \
+ ../../libs/math/vector.h ../../libs/sfm/pose_p3p.h \
+ ../../libs/sfm/defines.h
+bundler_intrinsics.o: bundler_intrinsics.cc \
+ ../../libs/sfm/bundler_intrinsics.h ../../libs/mve/scene.h \
+ ../../libs/mve/defines.h ../../libs/mve/view.h ../../libs/mve/camera.h \
+ ../../libs/mve/image_base.h ../../libs/util/strings.h \
+ ../../libs/util/defines.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/math/defines.h \
+ ../../libs/math/vector.h ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/mve/bundle.h ../../libs/mve/mesh.h \
+ ../../libs/sfm/bundler_common.h ../../libs/util/aligned_memory.h \
+ ../../libs/util/aligned_allocator.h ../../libs/sfm/camera_pose.h \
+ ../../libs/math/matrix_tools.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/correspondence.h ../../libs/sfm/feature_set.h \
+ ../../libs/sfm/sift.h ../../libs/sfm/surf.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/extract_focal_length.h ../../libs/mve/image_exif.h
+visualizer.o: visualizer.cc ../../libs/mve/image_tools.h \
+ ../../libs/util/exception.h ../../libs/util/defines.h \
+ ../../libs/math/accum.h ../../libs/math/functions.h \
+ ../../libs/math/defines.h ../../libs/math/vector.h \
+ ../../libs/math/algo.h ../../libs/math/matrix.h ../../libs/mve/defines.h \
+ ../../libs/mve/image.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/mve/image_drawing.h \
+ ../../libs/sfm/visualizer.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/correspondence.h
+camera_database.o: camera_database.cc camera_database.h \
+ ../../libs/sfm/defines.h
+bundler_incremental.o: bundler_incremental.cc ../../libs/util/timer.h \
+ ../../libs/util/defines.h ../../libs/math/transform.h \
+ ../../libs/math/matrix.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/math/vector.h \
+ ../../libs/math/matrix_svd.h ../../libs/math/matrix_tools.h \
+ ../../libs/math/matrix_qr.h ../../libs/sfm/triangulate.h \
+ ../../libs/sfm/correspondence.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/camera_pose.h ../../libs/sfm/bundle_adjustment.h \
+ ../../libs/util/logging.h ../../libs/sfm/ba_sparse_matrix.h \
+ ../../libs/sfm/ba_dense_vector.h ../../libs/sfm/ba_linear_solver.h \
+ ../../libs/sfm/ba_types.h ../../libs/sfm/bundler_incremental.h \
+ ../../libs/mve/bundle.h ../../libs/mve/camera.h ../../libs/mve/defines.h \
+ ../../libs/mve/mesh.h ../../libs/sfm/fundamental.h \
+ ../../libs/sfm/ransac_fundamental.h ../../libs/sfm/ransac_pose_p3p.h \
+ ../../libs/sfm/bundler_common.h ../../libs/util/aligned_memory.h \
+ ../../libs/util/aligned_allocator.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/sfm/feature_set.h \
+ ../../libs/sfm/sift.h ../../libs/sfm/surf.h ../../libs/sfm/defines.h
+feature_set.o: feature_set.cc ../../libs/sfm/feature_set.h \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/util/aligned_memory.h \
+ ../../libs/util/defines.h ../../libs/util/aligned_allocator.h \
+ ../../libs/sfm/sift.h ../../libs/mve/image.h ../../libs/math/functions.h \
+ ../../libs/math/matrix.h ../../libs/mve/defines.h \
+ ../../libs/mve/image_base.h ../../libs/util/strings.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/surf.h ../../libs/sfm/defines.h
+ransac_fundamental.o: ransac_fundamental.cc ../../libs/util/system.h \
+ ../../libs/util/defines.h ../../libs/math/algo.h \
+ ../../libs/math/defines.h ../../libs/sfm/ransac_fundamental.h \
+ ../../libs/math/matrix.h ../../libs/math/vector.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/correspondence.h \
+ ../../libs/sfm/fundamental.h ../../libs/sfm/camera_pose.h \
+ ../../libs/math/matrix_tools.h
+fundamental.o: fundamental.cc ../../libs/math/matrix_tools.h \
+ ../../libs/math/defines.h ../../libs/math/matrix.h \
+ ../../libs/math/algo.h ../../libs/math/vector.h \
+ ../../libs/math/matrix_svd.h ../../libs/math/matrix_qr.h \
+ ../../libs/math/functions.h ../../libs/sfm/fundamental.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/camera_pose.h \
+ ../../libs/sfm/correspondence.h
+ransac.o: ransac.cc ../../libs/math/functions.h ../../libs/math/defines.h \
+ ../../libs/math/vector.h ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/sfm/ransac.h ../../libs/sfm/defines.h
+bundler_matching.o: bundler_matching.cc ../../libs/util/exception.h \
+ ../../libs/util/defines.h ../../libs/util/timer.h ../../libs/sfm/sift.h \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/math/matrix.h \
+ ../../libs/mve/defines.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/ransac.h ../../libs/sfm/bundler_matching.h \
+ ../../libs/sfm/ransac_fundamental.h ../../libs/sfm/correspondence.h \
+ ../../libs/sfm/fundamental.h ../../libs/sfm/camera_pose.h \
+ ../../libs/math/matrix_tools.h ../../libs/sfm/bundler_common.h \
+ ../../libs/util/aligned_memory.h ../../libs/util/aligned_allocator.h \
+ ../../libs/sfm/feature_set.h ../../libs/sfm/surf.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/matching_base.h \
+ ../../libs/sfm/matching.h ../../libs/sfm/nearest_neighbor.h \
+ ../../libs/sfm/cascade_hashing.h ../../libs/sfm/exhaustive_matching.h \
+ ../../libs/util/system.h
+extract_focal_length.o: extract_focal_length.cc \
+ ../../libs/sfm/camera_database.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/extract_focal_length.h ../../libs/mve/image_exif.h \
+ ../../libs/mve/defines.h
+bundler_tracks.o: bundler_tracks.cc ../../libs/mve/image_tools.h \
+ ../../libs/util/exception.h ../../libs/util/defines.h \
+ ../../libs/math/accum.h ../../libs/math/functions.h \
+ ../../libs/math/defines.h ../../libs/math/vector.h \
+ ../../libs/math/algo.h ../../libs/math/matrix.h ../../libs/mve/defines.h \
+ ../../libs/mve/image.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/mve/image_drawing.h \
+ ../../libs/sfm/bundler_tracks.h ../../libs/mve/scene.h \
+ ../../libs/mve/view.h ../../libs/mve/camera.h ../../libs/mve/bundle.h \
+ ../../libs/mve/mesh.h ../../libs/sfm/bundler_matching.h \
+ ../../libs/sfm/ransac_fundamental.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/correspondence.h ../../libs/sfm/fundamental.h \
+ ../../libs/sfm/camera_pose.h ../../libs/math/matrix_tools.h \
+ ../../libs/sfm/bundler_common.h ../../libs/util/aligned_memory.h \
+ ../../libs/util/aligned_allocator.h ../../libs/sfm/feature_set.h \
+ ../../libs/sfm/sift.h ../../libs/sfm/surf.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/matching_base.h ../../libs/sfm/matching.h \
+ ../../libs/sfm/nearest_neighbor.h
+surf.o: surf.cc ../../libs/util/timer.h ../../libs/util/defines.h \
+ ../../libs/math/functions.h ../../libs/math/defines.h \
+ ../../libs/math/vector.h ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/math/matrix_tools.h ../../libs/mve/image.h \
+ ../../libs/mve/defines.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/mve/image_tools.h \
+ ../../libs/util/exception.h ../../libs/math/accum.h \
+ ../../libs/mve/image_drawing.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/surf.h ../../libs/sfm/defines.h
+bundler_common.o: bundler_common.cc ../../libs/util/exception.h \
+ ../../libs/util/defines.h ../../libs/sfm/bundler_common.h \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/util/aligned_memory.h \
+ ../../libs/util/aligned_allocator.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/math/matrix.h \
+ ../../libs/mve/defines.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/sfm/camera_pose.h \
+ ../../libs/math/matrix_tools.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/correspondence.h ../../libs/sfm/feature_set.h \
+ ../../libs/sfm/sift.h ../../libs/sfm/surf.h ../../libs/sfm/defines.h
+bundler_init_pair.o: bundler_init_pair.cc \
+ ../../libs/sfm/ransac_homography.h ../../libs/sfm/homography.h \
+ ../../libs/math/matrix.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/math/vector.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/correspondence.h ../../libs/sfm/triangulate.h \
+ ../../libs/sfm/camera_pose.h ../../libs/math/matrix_tools.h \
+ ../../libs/sfm/bundler_init_pair.h ../../libs/sfm/ransac_fundamental.h \
+ ../../libs/sfm/fundamental.h ../../libs/sfm/bundler_common.h \
+ ../../libs/util/aligned_memory.h ../../libs/util/defines.h \
+ ../../libs/util/aligned_allocator.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/mve/defines.h \
+ ../../libs/mve/image_base.h ../../libs/util/strings.h \
+ ../../libs/sfm/feature_set.h ../../libs/sfm/sift.h ../../libs/sfm/surf.h \
+ ../../libs/sfm/defines.h
+ransac_homography.o: ransac_homography.cc ../../libs/util/system.h \
+ ../../libs/util/defines.h ../../libs/math/algo.h \
+ ../../libs/math/defines.h ../../libs/math/matrix_tools.h \
+ ../../libs/math/matrix.h ../../libs/math/vector.h \
+ ../../libs/sfm/ransac_homography.h ../../libs/sfm/homography.h \
+ ../../libs/sfm/defines.h ../../libs/sfm/correspondence.h
+ba_linear_solver.o: ba_linear_solver.cc ../../libs/util/timer.h \
+ ../../libs/util/defines.h ../../libs/math/matrix.h \
+ ../../libs/math/defines.h ../../libs/math/algo.h \
+ ../../libs/math/vector.h ../../libs/math/matrix_tools.h \
+ ../../libs/sfm/ba_linear_solver.h ../../libs/sfm/defines.h \
+ ../../libs/sfm/ba_sparse_matrix.h ../../libs/sfm/ba_dense_vector.h \
+ ../../libs/sfm/ba_cholesky.h ../../libs/sfm/ba_conjugate_gradient.h

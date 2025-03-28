@@ -1,0 +1,53 @@
+texture.o: texture.cc ../../libs/ogl/texture.h ../../libs/mve/image.h \
+ ../../libs/math/functions.h ../../libs/math/defines.h \
+ ../../libs/math/vector.h ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/mve/defines.h ../../libs/mve/image_base.h \
+ ../../libs/util/strings.h ../../libs/util/defines.h \
+ ../../libs/ogl/defines.h ../../libs/ogl/opengl.h
+shader_program.o: shader_program.cc ../../libs/util/exception.h \
+ ../../libs/util/defines.h ../../libs/util/file_system.h \
+ ../../libs/ogl/shader_program.h ../../libs/math/vector.h \
+ ../../libs/math/defines.h ../../libs/math/algo.h \
+ ../../libs/math/matrix.h ../../libs/ogl/defines.h \
+ ../../libs/ogl/opengl.h ../../libs/ogl/check_gl_error.h \
+ ../../libs/util/strings.h
+render_tools.o: render_tools.cc ../../libs/mve/mesh.h \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/mve/defines.h \
+ ../../libs/ogl/mesh_renderer.h ../../libs/ogl/defines.h \
+ ../../libs/ogl/opengl.h ../../libs/ogl/shader_program.h \
+ ../../libs/math/matrix.h ../../libs/ogl/check_gl_error.h \
+ ../../libs/util/strings.h ../../libs/util/defines.h \
+ ../../libs/ogl/vertex_array.h ../../libs/ogl/vertex_buffer.h \
+ ../../libs/ogl/render_tools.h
+events.o: events.cc ../../libs/ogl/defines.h ../../libs/ogl/events.h
+camera_2d.o: camera_2d.cc ../../libs/math/matrix_tools.h \
+ ../../libs/math/defines.h ../../libs/math/matrix.h \
+ ../../libs/math/algo.h ../../libs/math/vector.h ../../libs/ogl/opengl.h \
+ ../../libs/ogl/camera_2d.h ../../libs/ogl/defines.h \
+ ../../libs/ogl/events.h ../../libs/ogl/camera.h
+camera_trackball.o: camera_trackball.cc ../../libs/math/matrix_tools.h \
+ ../../libs/math/defines.h ../../libs/math/matrix.h \
+ ../../libs/math/algo.h ../../libs/math/vector.h \
+ ../../libs/math/quaternion.h ../../libs/math/functions.h \
+ ../../libs/ogl/opengl.h ../../libs/ogl/camera_trackball.h \
+ ../../libs/ogl/defines.h ../../libs/ogl/events.h ../../libs/ogl/camera.h
+vertex_array.o: vertex_array.cc ../../libs/ogl/vertex_array.h \
+ ../../libs/ogl/defines.h ../../libs/ogl/opengl.h \
+ ../../libs/ogl/check_gl_error.h ../../libs/util/strings.h \
+ ../../libs/util/defines.h ../../libs/ogl/shader_program.h \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/math/matrix.h \
+ ../../libs/ogl/vertex_buffer.h
+mesh_renderer.o: mesh_renderer.cc ../../libs/ogl/opengl.h \
+ ../../libs/ogl/mesh_renderer.h ../../libs/mve/mesh.h \
+ ../../libs/math/vector.h ../../libs/math/defines.h \
+ ../../libs/math/algo.h ../../libs/mve/defines.h ../../libs/ogl/defines.h \
+ ../../libs/ogl/shader_program.h ../../libs/math/matrix.h \
+ ../../libs/ogl/check_gl_error.h ../../libs/util/strings.h \
+ ../../libs/util/defines.h ../../libs/ogl/vertex_array.h \
+ ../../libs/ogl/vertex_buffer.h
+vertex_buffer.o: vertex_buffer.cc ../../libs/ogl/vertex_buffer.h \
+ ../../libs/ogl/defines.h ../../libs/ogl/opengl.h \
+ ../../libs/ogl/check_gl_error.h ../../libs/util/strings.h \
+ ../../libs/util/defines.h

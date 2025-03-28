@@ -1,0 +1,5 @@
+build
+elibs/mve/apps
+elibs/mve/dist
+elibs/mve/docs
+elibs/mve/tests
