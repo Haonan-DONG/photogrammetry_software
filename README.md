@@ -53,7 +53,7 @@ The demo data is uploaded into [baidu disk, psw:7z9n](https://pan.baidu.com/s/1E
 ![mission_plan_result](doc/mission_plan.png)
 
 ### RGB Reconstrcution
-The data format should be:
+We provide a sample data in [baidu disk](https://pan.baidu.com/s/1Ekx5msUdmoQynWi4C12Fdw) from DTU datasets and the password is uts5. For custom data, he data format should be like:
 ```shell
 ---Project
     ---images
