@@ -1,3 +1,9 @@
 [submodule "third_party/colmap"]
 	path = third_party/colmap
 	url = https://github.com/colmap/colmap.git
+[submodule "third_party/openMVS"]
+	path = third_party/openMVS
+	url = https://github.com/cdcseacave/openMVS.git
+[submodule "third_party/VCG"]
+	path = third_party/VCG
+	url = https://github.com/cdcseacave/VCG.git
