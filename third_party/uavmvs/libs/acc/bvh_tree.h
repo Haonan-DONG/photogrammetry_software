@@ -18,6 +18,7 @@
 #include <stack>
 #include <thread>
 #include <vector>
+#include <memory>
 
 #include <cassert>
 

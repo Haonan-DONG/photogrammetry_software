@@ -164,7 +164,10 @@ if __name__ == "__main__":
     parser.add_argument('-i', '--input', type=str, help='input trajectory file', required=True)
     parser.add_argument('-p', '--point', type=str, help='input point cloud', required=True)
     parser.add_argument('-t', '--type', type=str, help='trajectory file type: uavmvs, fc-planner', required=True, default='uavmvs')
+    parser.add_argument('-n', '--number', type=int, help='minimum images for skipping.', default=5000)
 
     args = parser.parse_args()
+
+    MAX_VISUALIZE_CODE = args.number
 
     trajectory_visualization(args.input, args.point, args.type)

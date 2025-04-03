@@ -15,6 +15,7 @@
 #include <atomic>
 #include <thread>
 #include <algorithm>
+#include <memory>
 
 #include <math/vector.h>
 

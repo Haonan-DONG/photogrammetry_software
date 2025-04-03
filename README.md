@@ -24,7 +24,7 @@ cd mve
 make -j
 
 ## compile the root
-cmake .. -DMVE_ROOT=../third_party/uavmvs/elibs/mve/
+cmake .. -DMVE_ROOT=../third_party/uavmvs/elibs/mve/ -DPROJ_DIR=[PATH_TO_PROJ]
 make -j
 
 ## path planning
@@ -71,6 +71,9 @@ We provide a sample data in [baidu disk](https://pan.baidu.com/s/1Ekx5msUdmoQynW
     - [X] Test the optimized path planning
 - [X] Released Pipeline for COLMAP for SfM.
 - [X] Add openMVS as a library. From rgb input into textured mesh.
+
+### Tag 1.1
+- [X] Fix the bug for visualization and DJI platform transfermation.
 
 ### Feature: suit large-scale dataset
 - [ ] For large-scale dataset, incoorperate parallel-sfm module
